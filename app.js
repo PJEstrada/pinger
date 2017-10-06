@@ -18,7 +18,7 @@ function makRequest(){
         console.log(error);
         if(error){
             console.log("Smart Site Died: I will respawn it haha... ");
-            shell.exec('sudo ./ docker-reset.sh')
+            shell.exec('sudo sh ../gas-meter-backend/docker-reset.sh')
         }
         else{
             console.log("All good :)")
