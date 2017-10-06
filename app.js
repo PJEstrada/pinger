@@ -14,10 +14,11 @@ app.listen(5002, function () {
 });
 
 function makRequest(){
-    request('127.0.0.1:4000', function (error, response, body) {
+    request('localhost:4000', function (error, response, body) {
+        console.log(error);
         if(error){
             console.log("Smart Site Died: I will respawn it haha... ");
-            shell.exec('./ docker-reset.sh')
+            shell.exec('sudo ./ docker-reset.sh')
         }
         else{
             console.log("All good :)")
