@@ -14,7 +14,7 @@ app.listen(5002, function () {
 });
 
 function makRequest(){
-    request.get('http://localhost:4000', function (error, response, body) {
+    request.get('http://localhost:4000',  {timeout: 1500}, function (error, response, body) {
         console.log(error);
         if(error){
             console.log("Smart Site Died: I will respawn it haha... ");
