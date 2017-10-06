@@ -33,5 +33,5 @@ function makRequest(){
         if (c > 2) {
             clearInterval(timeout);
         }
-    }, 10000);
+    }, 15000);
 })();
