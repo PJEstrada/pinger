@@ -27,12 +27,6 @@ function makRequest(){
 }
 
 (function() {
-    var c = 0;
-    var timeout = setInterval(function() {
-        makRequest();
-        c++;
-        if (c > 2) {
-            clearInterval(timeout);
-        }
-    }, 15000);
+    setInterval(makRequest,
+        25000);
 })();
