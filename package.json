@@ -1,0 +1,23 @@
+{
+  "name": "pinger",
+  "version": "1.0.0",
+  "description": "pinger",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PJEstrada/pinger.git"
+  },
+  "author": "Pablo Estrada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PJEstrada/pinger/issues"
+  },
+  "homepage": "https://github.com/PJEstrada/pinger#readme",
+  "dependencies": {
+    "express": "^4.16.1",
+    "request": "^2.83.0"
+  }
+}
