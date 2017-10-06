@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
 });
 
 app.listen(5002, function () {
-    console.log('Example app listening on port 5002!');
+    console.log('Smart Site Will never die with me. Im your slave.');
 
 
 });
@@ -20,7 +20,7 @@ function makRequest(){
             shell.exec('./ docker-reset.sh')
         }
         else{
-
+            console.log("All good :)")
         }
     });
 }
